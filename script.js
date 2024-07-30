@@ -93,6 +93,9 @@ function setResult() {
             icons[(icons.length - 3) + x].setAttribute('src', 'items/' + results[x] + '.png');
         }
     }
+    if (results[0] == results[1] == results[2]){
+        window.alert("you won!!");
+    }
 }
 
 function getRandomIcon() {
